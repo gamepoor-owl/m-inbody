@@ -1,0 +1,93 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
+
+### Application logs ###
+*.log
+logs/
+
+### SSL/TLS certificates and keystores ###
+*.p12
+*.jks
+*.pem
+*.key
+*.crt
+*.cer
+keystore.*
+
+### Sensitive configuration files ###
+# API keys and secrets
+*secret*
+*credential*
+*.env
+
+# Production configuration (if contains sensitive data)
+# Uncomment if these files will contain production secrets
+# src/main/resources/application-production.yml
+# src/main/resources/application-local.yml
+
+### Build outputs and temporary files ###
+deploy/*.exe
+deploy/*.msi
+deploy/*.app
+deploy/*.dmg
+deploy/*.AppImage
+deploy/jre/
+deploy/output/
+deploy/temp/
+
+### Database files ###
+*.db
+*.sqlite
+*.sqlite3
+
+### Backup files ###
+*.bak
+*.backup
+*~
+
+### Personal workspace files ###
+workspace.xml
+tasks.xml
+
+
+
+/src/main/resources/**
+/src/main/kotlin/com/gamboo/minbody/rest/RedirectController.kt

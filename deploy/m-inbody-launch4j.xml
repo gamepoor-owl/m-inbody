@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>m-inbody-0.0.1-SNAPSHOT.jar</jar>
+  <outfile>M-INBODY.exe</outfile>
+  <errTitle>M-INBODY Error</errTitle>
+  <cmdLine>--spring.profiles.active=prod --logging.level.com.gamboo.minbody=DEBUG --logging.level.org.pcap4j=DEBUG</cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl>https://discord.gg/kDXpuEd3Em</supportUrl>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest>m-inbody.manifest</manifest>
+  <icon>icon.ico</icon>
+  <jre>
+    <path>jre</path>
+    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>jreOnly</jdkPreference>
+    <runtimeBits>64</runtimeBits>
+    <opt>-Dfile.encoding=UTF-8 -Dconsole.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -Duser.language=ko -Duser.country=KR -Djava.net.preferIPv4Stack=true</opt>
+    <initialHeapSize>512</initialHeapSize>
+    <maxHeapSize>2048</maxHeapSize>
+  </jre>
+  <messages>
+    <startupErr>An error occurred while starting M-INBODY</startupErr>
+    <bundledJreErr>This application requires Java Runtime Environment</bundledJreErr>
+    <jreVersionErr>This application requires Java Runtime Environment</jreVersionErr>
+    <launcherErr>The application could not be started</launcherErr>
+    <instanceAlreadyExistsMsg>M-INBODY is already running</instanceAlreadyExistsMsg>
+  </messages>
+  <singleInstance>
+    <mutexName>M-INBODY-Mutex</mutexName>
+    <windowTitle>M-INBODY Damage Meter</windowTitle>
+  </singleInstance>
+</launch4jConfig>
