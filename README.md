@@ -73,6 +73,8 @@ m-inbody/
 
 ## ⚡ 빠른 시작
 
+https://lukeson.notion.site/M-2370a5ac02648026ad65dca0a649cd73?pvs=74
+
 ### 사전 요구사항
 
 1. **Java 17 이상** 설치
