@@ -4,11 +4,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.boot.context.event.ApplicationReadyEvent
 import org.springframework.context.event.EventListener
+import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.stereotype.Component
 import java.awt.Desktop
 import java.net.URI
 
 @SpringBootApplication
+@EnableScheduling
 class MinbodyApplication
 
 fun main(args: Array<String>) {
